@@ -1,0 +1,628 @@
+:root{
+    --primary:#deb3f4;
+    --background: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body{
+    
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background);
+    color: #fff
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 7%;
+    background-color: rgb(0, 0, 0, 0.90);
+    border-bottom: 2px solid var(--primary);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+}
+
+.navbar .navbar-logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff ;
+    
+}
+
+.navbar .navbar-nav a{
+    color: #fff;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin: 0 1rem;
+}
+
+.navbar .navbar-nav a:hover {
+    color: var(--primary);
+}
+
+
+.navbar .navbar-extra a {
+    color: #fff;
+    margin: 0 0.5rem;
+}
+
+.navbar .navbar-extra a:hover {
+    color: var(--primary);
+}
+
+
+#hamburger-menu {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    padding: 3rem 2% 0.5rem;
+}
+
+.hero .content {
+    margin: auto;
+    margin-top: 17%;
+    justify-content: center;
+    padding: 0;
+    max-width: 60rem;
+    text-align: center;
+    object-position: center;
+    position: relative;
+}
+
+.hero .content h1 {
+    font-size: 5rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    line-height: 1.2;
+}
+
+.hero .content h1 span{
+    color: var(--primary);
+}
+
+.hero .content p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 100;
+    text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+    mix-blend-mode: difference;
+}
+
+
+/*a About Section */
+.about {
+    padding: 10rem 7% 1.4rem;
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.about h2 span {
+    color: var(--primary);
+}
+
+.about .row {
+    display: flex;
+}
+
+.about .row .about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about .row .about-img img {
+    border-radius: 50%;
+    border: 3px solid var(--primary);
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    object-position: top;
+}
+
+.about .row .content {
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+}
+
+.about .row .content h3 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-left: 30px;
+}
+
+.about .row .content p {
+    margin-top: 1rem;
+    margin-bottom: 0.8rem;
+    margin-left: 30px;
+    font-size: 1.2rem;
+    color: #eee;
+}
+
+.about .row .content p span {
+    color: var(--primary);
+}
+
+/* skills section */
+.skills {
+    /* padding: 10rem 7% 1.4rem; */
+    padding: 100px 5px 110px;
+}
+
+.skills h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.skills h2 span {
+    color: var(--primary);
+}
+
+#Frontend {
+    margin: 5rem;
+    border-bottom: 1px solid var(--primary); 
+}
+
+#languages {
+     margin: 5rem;
+     border-bottom: 1px solid var(--primary);
+     
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1 1 35rem;
+    padding: 0 1rem;
+    margin-bottom: 20%;
+    margin-top: 3rem;
+}
+
+.container .skills h2 {
+    font-size: 2rem;
+}
+
+.container .skills h3 {
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.progress-bar {
+    background: #959595;
+    width: 800px;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.progress-bar div {
+    height: 10px;
+    border-radius: 5px;
+    width: 70%;
+}
+
+.progress-bar div span {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background: #fff;
+    float: right;
+    margin-top: -15px;
+    margin-right: -20px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.HTML {
+    background: var(--primary);
+    animation: HTMl 1s linear forwards;
+}
+.CSS {
+    background: var(--primary);
+    animation: CSS 1s linear forwards;
+}
+.javaScript {
+    background: var(--primary);
+    animation: JavaScript 1s linear forwards;
+}
+.Canva {
+    background: var(--primary);
+    animation: Canva 1s linear forwards;
+}
+.Indonesian {
+    background: var(--primary);
+    animation: Indonesian 1s linear forwards;
+}
+.English {
+    background: var(--primary);
+    animation: English 1s linear forwards;
+}
+
+.HTML span {
+    border: 3px solid var(--primary);
+}
+.CSS span {
+    border: 3px solid var(--primary);
+}
+.javaScript span {
+    border: 3px solid var(--primary);
+}
+.Canva span {
+    border: 3px solid var(--primary);
+}
+.Indonesian {
+    border: 3px solid var(--primary);
+}
+.English {
+    border: 3px solid var(--primary);
+}
+
+
+@keyframes HTML {
+    100% {
+        width: 70%;
+    }
+}
+@keyframes CSS {
+    100% {
+        width: 70%;
+    }
+}
+@keyframes JavaScript {
+    100% {
+        width: 50%;
+    }
+}
+@keyframes Canva {
+    100% {
+        width: 80%;
+    }
+}
+@keyframes Indonesian {
+    100% {
+        width: 90%;
+    }
+}
+@keyframes English {
+    100% {
+        width: 65%;
+    }
+}
+
+/* Education Secton */
+
+.Education {
+    padding: 10rem 7% 1.4rem;;
+}
+
+.Education .h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.Education h2 span {
+    color: var(--primary);
+}
+
+.Education .box-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.Education .box-container .box {
+    margin: 1rem;
+    padding-left: 4rem;
+    border-left: .2rem solid #fff;
+    position: relative;
+    
+}
+
+.Education .box-container .box span {
+    font-size: 1.3rem;
+    background: var(--background);
+    color: var(--primary);
+    border-radius: 5rem;
+    padding: .5rem 2rem;
+}
+
+.Education .box-container .box h3 {
+    font-size: 1.5rem;
+    color: #fff;
+    padding-top: 1.5rem;
+}
+
+.Education .box-container .box p {
+    font-size: 1.2rem;
+    color: #eee;
+    padding-top:  1rem 0;
+}
+
+.Education .box-container .box i {
+    position: absolute;
+    top: -1.5rem; left: -2.5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    background: var(--primary);
+}
+
+/* Portofolio Section */
+
+.Portofolio {
+    padding: 10rem 7% 1.4rem;;
+}
+
+.Portofolio .h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.Portofolio h2 span {
+    color: var(--primary);
+}
+ 
+.Portofolio .box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.Portofolio .box-container .box {
+    height: 240px;
+    width: 320px;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.Portofolio .box-container .box:hover img {
+    transform: scale(1.2);
+} 
+
+/* Contact Section */
+.Contact {
+    padding: 10rem 7% 1.4rem;
+}
+
+.Contact h2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+}
+
+.Contact h2 span {
+    color: var(--primary);
+}
+
+.Contact .row {
+    display: flex;
+    margin-top: 2rem;
+    background-color: #222;
+}
+
+.Contact .row .map {
+    flex: 1 1 45rem;
+    width:  100%;
+    object-fit: cover;
+}
+
+.Contact .row form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.Contact .row form .input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: var(--background);
+    border: 1px solid var(--primary);
+    padding-left: 2rem;
+}
+
+.Contact .row form .input-group input {
+    width: 100%;
+    padding: 2rem;
+    font-size: 1.3rem;
+    background: none;
+    color: #fff;
+}
+
+.Contact .row form .btn {
+    margin-top: 3rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 1.2rem;
+    font-size: 1.3rem;
+    color: black;
+    background-color: var(--primary);
+    cursor: pointer;
+    margin-left: 300px;
+}
+
+/* footer */
+footer{
+    background-color: var(--primary);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+
+footer .social {
+    padding: 1rem 0;
+}
+
+footer .social a {
+    color: black;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+footer .social a:hover ,
+footer .link a:hover {
+    color: #fff;
+}
+
+footer .link {
+    margin-bottom: 1.4rem;
+}
+
+footer .link a {
+    color: #fff;
+    padding: 0.7rem 1rem;
+}
+
+footer .credit {
+    font-size: 0.8rem;
+    color: black;
+}
+
+footer .credit a {
+    color: var(--background);
+    font-weight: 700;
+}
+
+
+/* Media Queries */
+@media (max-width: 991px) {
+    .hero {
+        height: 10vh;
+        margin-bottom: 60px;
+        font-size: 10px;
+    }
+
+    .about {
+        padding: 20rem 7% 1.4rem;
+    }
+    .about .content{
+        flex-direction: column;
+    }
+
+    .container {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    #Contact,
+    #Portofolio {
+        height: fit-content;
+    }
+
+    #hamburger-menu {
+        display: inline-block;
+    }
+
+    .navbar .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #fff;
+        width: 20rem;
+        height: 100vh;
+        transition: 0.3s;
+    }
+
+    .navbar .navbar-nav.active {
+        right: 0;
+    }
+
+    .navbar .navbar-nav a {
+        color: black;
+        display: block;
+        margin: 1.5rem;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+    .about .row {
+        flex-direction: column;
+    }
+    .about .row .content {
+        flex: 1;
+        padding: 0;
+    }
+    
+    .about .row .content h3 {
+        font-size: 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        margin-left: 30px;
+    }
+    
+    .about .row .content p {
+        margin-top: 1rem;
+        margin-bottom: 0.8rem;
+        margin-left: 30px;
+        font-size: 1.2rem;
+        color: #eee;
+    }
+
+    .Contact .row {
+        flex-direction: column;
+    }
+
+    .Contact .row .map {
+        flex-basis: 25rem;
+    }
+
+    .Contact .row form {
+        padding: 2rem;
+    }
+
+    .Contact .row form .btn {
+        display: inline-block;
+        padding: 1rem 3rem;
+        border-radius: 1.2rem;
+        font-size: 1.3rem;
+        color: black;
+        background-color: var(--primary);
+        cursor: pointer;
+        margin-left: 0;
+    }
+}
+
+/* Media Queries for max-width: 1200px */
+@media (max-width: 1200px) {
+    /* Tambahkan peraturan CSS sesuai kebutuhan untuk lebar layar 1200px */
+    /* Contoh: Anda dapat mengatur ulang tata letak atau mengubah properti font-size */
+}
